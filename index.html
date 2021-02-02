@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adaprive Navbar | CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navbar_wrapper">
+        <input type="checkbox" id="toggler">
+        <!-- Nu stiu cum sa pot activa ambele checkbox-uri -->
+        <input type="checkbox" id="contacts_toggler"> 
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <label for="toggler"> <i class="fas fa-bars"></i></label>
+                </li>
+          
+                <li class="brand_image"><a id="brand" href="#"><img  src="brand.svg" alt=""><span>plant.md</span></a></li>
+                
+                <li class="main"><a id="home" href="#">Home</a></li>
+                <li class="main"><a id="products"href="#">Products</a></li>
+                <li class="main"><a id="services"href="#">Services</a></li>
+                <li class="main"><a id="portfolio"href="#">Portfolio</a></li>
+                
+
+                <li class="contacts"><a id="phone" href="#"><i class="fas fa-phone-square-alt"></i> +1234568</a></li>
+                <li class="contacts"><a id="viber" href="#"><i class="fab fa-viber"></i></a></li>
+                <li class="contacts"><a id="messenger" href="#"><i class="fab fa-facebook-messenger"></i></a></li>
+               <!-- Am transformat intr-un buton pentru a putea fi accesat cu checkbox -->
+                <li class="contact">
+                   <label for="contacts_toggler"> Contacts</label>
+                </li>
+                
+
+
+                <li class="user"><a id="user" href="#"><i class="fas fa-user"></i></a></li>
+                <li class="user"><a id="cart" href="#"><i class="fas fa-shopping-cart"></i></a></li> 
+                
+                
+            </ul>
+            <!-- Am pus o fereastra pentru a o utiliza ca si fundal la rezolutie<520px -->
+            <div class="window"> </div>
+                        
+        </nav>
+    </div>
+
+</body>
+</html>

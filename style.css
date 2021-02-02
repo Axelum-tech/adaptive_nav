@@ -1,0 +1,429 @@
+body{
+    background-color:black;
+    font-family: 'Work Sans', sans-serif;
+
+}
+.navbar_wrapper{
+    background:linear-gradient(#333,#444,#333);
+
+}
+
+.navbar{
+    background:transparent;
+    color: whitesmoke;
+    /* border: 1px solid green;  */
+    display:table;
+    width: 90%;
+    margin: auto;
+
+}
+.navbar ul{
+    display: table-row;
+    
+}
+ .navbar ul li{
+    display: table-cell;
+    /* border: 1px solid red;       */
+    vertical-align: middle;
+    padding:0 1%;
+    white-space: nowrap;
+} 
+
+
+.navbar ul a{
+    text-decoration: none;
+    color:white
+    
+
+}
+.navbar ul img{
+    width: 3em;
+}
+
+.navbar_wrapper .navbar .brand_image{
+    position: relative;
+    padding-right: 10%;
+
+}
+.navbar_wrapper .navbar span{
+   position: relative;
+   top: -16px;
+   
+   /* color:red; */
+   
+}
+
+
+.navbar ul li.main{
+    
+    padding-right: 10%;
+}
+.navbar ul li.main:nth-child(3){
+  
+    padding-right: 3%;
+  
+   
+}
+.navbar ul li.main:nth-child(4){
+    
+    padding-right: 3%;
+    
+}
+.navbar ul li.main:nth-child(6){
+    
+    display: none;
+    
+}
+
+.navbar ul li.contacts{
+    text-align: right;
+}
+.navbar ul li.contacts:nth-child(10){
+    display:none
+}
+
+.navbar ul li.user:nth-child(11){
+    padding-left: 10%;
+    text-align: right;
+}
+.navbar ul li.user:nth-child(12){
+    text-align: left; 
+    padding-right: 5%;
+}
+
+#toggler{
+    display: none;
+}
+.navbar ul li:nth-child(1){
+    display: none;
+}
+#contacts_toggler{
+    display: none;
+}
+.navbar ul li.contact label{
+    display: none;
+    }
+
+@media( max-width:1200px){
+ 
+    .navbar ul li.user:nth-child(11){
+        padding-left: 10%;
+    }
+    .navbar ul li.user:nth-child(12){
+        padding-right: 3%;
+    }
+    .navbar ul li.contact label{
+        display: none;
+        }
+    
+}
+
+@media( max-width:1050px){
+    
+    .navbar ul li.user:nth-child(11){
+        padding-left: 8%;
+    }
+    .navbar ul li.user:nth-child(12){
+        padding-right: 6%;
+    }
+    .navbar ul li.contact label{
+        display: none;
+        }
+}
+@media( max-width:950px){
+    .navbar ul li.contacts:nth-child(10){
+        display:table-cell;
+        text-align: left;
+    }
+    .navbar ul li.contacts:nth-child(9){
+        display:none
+    }
+    .navbar ul li.contacts:nth-child(8){
+        display:none
+    }
+    .navbar ul li.contacts:nth-child(7){
+        display:none
+    }
+    .navbar ul li.main:nth-child(5){
+        padding-right: 3%;
+    }
+    .navbar ul li.contact label{
+        display: table-cell;
+        }
+
+   
+    .navbar ul li.user:nth-child(11){
+        padding-left: 8%;
+    }
+    .navbar ul li.user:nth-child(12){
+        padding-right: 3%;
+    }
+    #contacts_toggler:checked+.navbar .contacts{
+        position: absolute;
+        display: block;
+        top: 3.5em; 
+        width: 5em;
+        height: 5.5em; 
+    }
+    
+    #contacts_toggler:checked+.navbar .contacts #phone {
+        /* display: block; */
+        top:0em;
+        position:relative;
+        right: 0.2em;
+        animation:burger_word 2s;
+        z-index: 1;
+    }
+    #contacts_toggler:checked+.navbar .contacts #viber i {
+        top:2em;
+        display: block;
+        position: relative;
+        right: 0.2em;
+        animation:burger_word 2s;
+        z-index: 1;
+        text-align: left;
+       
+    }
+
+    #contacts_toggler:checked+.navbar .contacts #messenger {
+        top:4em;
+        display: block; 
+        position: relative;
+        right: 4.2em;
+        animation:burger_word 2s;
+    }
+    
+}
+
+@media( max-width:800px){
+    .navbar ul li.contacts:nth-child(10){
+        display:table-cell;
+        text-align: left;
+
+    }
+    .navbar ul li.contacts:nth-child(9){
+        display:none
+    }
+    .navbar ul li.contacts:nth-child(8){
+        display:none
+    }
+    .navbar ul li.contacts:nth-child(7){
+        display:none
+    }
+    .navbar ul li.main:nth-child(6){
+        padding-right: 3%;
+        
+    }
+
+   
+    .navbar ul li.user:nth-child(11){
+        padding-left: 5%;
+    }
+    .navbar ul li.user:nth-child(12){
+        padding-right: 10%;
+    }
+}
+
+@media( max-width:700px){
+    .navbar ul li.contacts:nth-child(10){
+        display:table-cell;
+        text-align: left;
+
+    }
+    .navbar ul li.contacts:nth-child(9){
+        display:none
+    }
+    .navbar ul li.contacts:nth-child(8){
+        display:none
+    }
+    .navbar ul li.contacts:nth-child(7){
+        display:none
+    }
+    .navbar ul li.main:nth-child(6){
+        
+        display: table-cell;
+        
+    }
+
+    .navbar ul li.main:nth-child(4){
+        display: none;
+        
+    }
+    .navbar ul li.main:nth-child(5){
+        display: none;
+        
+    }
+
+    .navbar ul li.user:nth-child(11){
+        padding-left: 5%;
+    }
+    .navbar ul li.user:nth-child(12){
+        padding-right: 10%;
+    }
+}
+
+@media( max-width:520px){
+
+    .navbar_wrapper{
+        background:linear-gradient(#333,#444,#333);
+        height: 6rem;
+        position: relative;
+    }
+   
+    .navbar ul li.contacts{
+        display:none;}
+
+    .navbar ul li.contacts:nth-child(10){
+            display:none
+    }
+    
+    .navbar ul li.main{              
+        display: none;
+            }
+    .navbar ul li.main:nth-child(6){              
+        display: none;
+    }
+    .navbar ul li.brand_image{              
+        display:table-cell;
+        width: 30vw;
+        position: absolute;
+        margin-top: 1%;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .navbar ul li:nth-child(1){
+        display:table-cell;
+        position: absolute;
+        margin-top: 7.5%;
+        right:35%;
+        font-size: 1.5em;
+               
+    }
+    .navbar_wrapper .navbar ul li label i{
+        cursor: pointer;
+    }
+    .navbar ul li.user{
+        display:table-cell;
+        position: relative;
+        left:20%;
+        padding-top: 5%;
+        font-size: 1.5em;
+    }
+    .navbar ul li.contact label{
+        display: none;
+        }
+    /* Nu imi dau seama cum sa apelez toggle, atunci cind isi schimba pozitia */
+    #toggler:checked+.navbar .main{
+       position: absolute;
+        /* border: solid red 1px; */
+        display: block;
+        width: 15%;      
+        left: 52%;
+        right:0;
+        padding-left: 3%;   
+    }
+    
+
+    #toggler:checked+.navbar .main:nth-child(3){
+        top:6em;
+        text-align: center;
+        animation: burger_word 3s ;
+    }
+        
+    #toggler:checked+.navbar .main:nth-child(4){
+        top:9em;
+        text-align: center;
+        animation: burger_word 3s ;
+        
+    }
+    #toggler:checked+.navbar .main:nth-child(5){
+        top:12em;
+        text-align: center;
+        animation: burger_word 3s ;
+    }
+    #toggler:checked+.navbar .main:nth-child(6){
+        top:15em;
+        text-align: center;
+        animation: burger_word 3s ;
+    }
+
+    #toggler:checked+.navbar .window{
+        display: block;
+        position: absolute;
+        background-image:linear-gradient(rgba(114, 111, 111, 0.432),rgba(48, 42, 42, 0.425),rgba(92, 86, 86, 0.158));
+        width: 6rem;
+        height: 12rem;
+        top:6em;
+        right:8.7em;
+        z-index: -1;
+        animation: burger_open 0.5s ;
+    }
+          
+}
+@keyframes burger_open{
+    from{ height: 0rem;
+    }
+    to{
+        height: 12rem;
+    }
+}
+
+
+@keyframes burger_word{
+        from{ opacity: 0;
+    
+        }
+        to{opacity:100;
+            ;
+    
+        }}
+#brand:hover  {
+            color:rgb(159, 207, 87)
+        }
+#home:hover  {
+            color:rgba(153, 255, 0, 0.452)
+        }
+#products:hover{
+    color:rgba(153, 255, 0, 0.452)
+}
+#services:hover{
+    color:rgba(153, 255, 0, 0.452)
+}
+#portfolio:hover{
+    color:rgba(153, 255, 0, 0.452)
+}
+#contacts:hover{
+    color:rgba(153, 255, 0, 0.452)
+}
+#phone:hover{
+    color:rgba(153, 255, 0, 0.452)
+}
+#phone:hover{
+    color:rgba(153, 255, 0, 0.452)
+}
+#viber:hover{
+    color:#665CAC
+}
+#messenger:hover{
+    color:#006AFF
+}
+
+
+#user:hover{color:rgba(252, 255, 248, 0.452)
+
+}
+#cart:hover{color:rgba(252, 255, 248, 0.452)
+}
+
+
+
+
+
+
+
+
+
+
+    
+    
+
